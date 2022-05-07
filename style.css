@@ -1,0 +1,183 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #02aab0, #00cdac);
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-image: linear-gradient(#ddd6f3 ,#faaca8);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-decoration: solid;
+}
+.container header:hover{
+    
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(196, 0, 0);
+    text-align: center;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+.container form{
+    position: relative;
+    margin-top: 20px;
+    min-height: 350px;
+    background:transparent;
+    
+    overflow: hidden;
+}
+
+
+
+.container form .title{
+    display: block;
+    margin-bottom: 9px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 5px 3px;
+    color: #333;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 12px);
+    flex-direction: column;
+    margin: 9px 2px;
+}
+.input-field label{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(1, 85, 7);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 1px 2px;
+    height: 42px;
+    margin: 8px 2px;
+}
+
+
+
+.container form button, .backBtn{
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 12px 210px;
+    background-color: #7da0ff;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+.container form .btnText{
+    font-size: 15px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #8bffff;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+form .add{
+    margin: 12px 204px;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+}
+@media (max-width: 960px) {
+    .container form{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+    form .add{
+        margin: 12px 100px;
+        position: relative;
+        font-size: 15px;
+        text-align: center;
+    }
+    .container form button, .backBtn{
+        height: 45px;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 5px;
+        float: right;
+        background-color: #7da0ff;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    
+    }
+   
+}
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+    form .add{
+        margin: 12px 110px;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .container form button, .backBtn{
+        height: 45px;
+        max-width: 200px;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 5px;
+        margin: 12px 115px;
+        background-color: #7da0ff;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    
+    }
+} 
+
